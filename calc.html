@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="Stylesheet" href="style.css">
+    <script defer src="style.js"></script>
+</head>
+<body>
+
+    <div class="Container">
+        <div class="Calculator">
+
+            <form>
+                <div class="display">
+                    <input type="text" name="Display" id="result">
+                </div>
+
+                <div>
+                    <input type="button" value="MC" onclick="memoryClear()">
+                    <input type="button" value="MR" onclick="memoryRecall()">
+                    <input type="button" value="M+" onclick="memoryAdd()">
+                    <input type="button" value="M-" onclick="memorySub()">
+                    <input type="button" value="MS" onclick="memoryStore()">
+                </div>
+
+                <div>
+                    <input type="button" value="2&#x207F;&#x1D48;">
+                    <input type="button" value="&#960;" onclick="dis('3.14159265359')">
+                    <input type="button" value="e" onclick="e()">
+                    <input class="Clear" type="button" value="C" onclick="c()">
+                    <input type="button" value="Del" onclick="del()">
+                </div>
+
+                <div>
+                    <input type="button" value="x&#178;" onclick="x2()">
+                    <input type="button" value="1/x" onclick="inverse()">
+                    <input type="button" value="|x|" onclick="abs()">
+                    <input type="button" value="exp" onclick="exp()">
+                    <input type="button" value="mod" onclick="dis('%')">
+                </div>
+
+                <div>
+                    <input type="button" value="2&radic;x" onclick="rootx()">
+                    <input type="button" value="(" onclick="dis('(')"> 
+                    <input type="button" value=")" onclick="dis(')')">
+                    <input type="button" value="n!" onclick="fact()">
+                    <input type="button" value="/" onclick="dis('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="x&#x02B8;" onclick="dis('**')">
+                    <input class="Numbers" type="button" value="7" onclick="dis('7')">
+                    <input class="Numbers" type="button" value="8" onclick="dis('8')">
+                    <input class="Numbers" type="button" value="9" onclick="dis('9')">
+                    <input type="button" value="*" onclick="dis('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="10&#x02E3;" onclick="x10()">
+                    <input class="Numbers" type="button" value="4" onclick="dis('4')">
+                    <input class="Numbers" type="button" value="5" onclick="dis('5')">
+                    <input class="Numbers" type="button" value="6" onclick="dis('6')">
+                    <input type="button" value="-" onclick="dis('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="log" onclick="log()">
+                    <input class="Numbers" type="button" value="1" onclick="dis('1')">
+                    <input class="Numbers" type="button" value="2" onclick="dis('2')">
+                    <input class="Numbers" type="button" value="3" onclick="dis('3')">
+                    <input type="button" value="+" onclick="dis('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="ln" onclick="ln()">
+                    <input type="button" value="+/-" onclick="changesign()">
+                    <input class="Numbers" type="button" value="0" onclick="dis('0')">
+                    <input type="button" value="." onclick="dis('.')">
+                    <input class="Equal" type="button" value="=" onclick="slove()">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.Container{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Calculator{
+    background: #3a4452;
+    border-radius: 1.14vw;
+}
+
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width: 6.85vw;
+    border-radius: 1.14vw;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.2);
+    background: transparent;
+    font-size: 2.28vw;
+    color: #fff;
+    cursor: pointer;
+    margin: 1.14vw;
+}
+.Calculator form input:hover{
+    box-shadow: inset -8px -8px 15px rgba(139, 139, 139, 0.2);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 5.14vw;
+    box-shadow: none;
+    background: black;
+    overflow: scroll;
+}
+
+form input.Equal{
+    background-color:  rgb(196, 57, 80);
+}
+
+form input.Numbers{
+    background-color: rgb(115, 121, 158);
+}
+
+form input.Clear{
+    background-color: rgb(58, 58, 56);
+}
